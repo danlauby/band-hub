@@ -23,3 +23,15 @@ $local_settings = __DIR__ . "/settings.local.php";
 if (file_exists($local_settings)) {
   include $local_settings;
 }
+$databases['default']['default'] = array (
+  'database' => 'bandhubepicodus',
+  'username' => 'bandhubepicodus',
+  'password' => 'bandhubepicodus42',
+  'prefix' => '',
+  'host' => '127.0.0.1',
+  'port' => '8889',
+  'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
+  'driver' => 'mysql',
+);
+$settings['hash_salt'] = 'x2NgVkj-obzcmq6IhrWlwFEQAas9Jvcgr8FbmLVK5uazGDpGg_c5JgZ8iqC-ScwYQSVvZxCwow';
+$settings['install_profile'] = 'standard';
